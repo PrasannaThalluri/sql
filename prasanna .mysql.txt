@@ -1,0 +1,18 @@
+CREATE TABLE students (
+    name VARCHAR(50),
+    age INT,
+    rollno INT PRIMARY KEY
+);
+INSERT INTO students (name, age, rollno) VALUES
+('prasanna', 20, 79),
+('divya', 21, 80),
+('rosiii', 19, 81),
+('leyahh', 22, 82),
+('likki', 20, 83),
+('jahnavi', 23, 84),
+('anusha', 21, 85),
+('parnika', 22, 86);
+SELECT * FROM students;
+SELECT * FROM students WHERE age > 21;
+UPDATE students SET age = 18 WHERE rollno = 82;
+DELETE FROM students WHERE rollno = 79;
